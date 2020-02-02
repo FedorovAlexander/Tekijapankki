@@ -17,16 +17,13 @@ html(class="no-js  page", lang="ru")
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
   body
-    .page__inner
-      .page__content
+    .page__wrapper
+      block header
 
-        div header
-          block nav
-
+      main
         block content
 
-      .page__footer-wrapper
-        div footer
+      block footer
 
     block page-bottom
       script(src="js/script.min.js")
