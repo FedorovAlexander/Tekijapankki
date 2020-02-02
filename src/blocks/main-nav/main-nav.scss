@@ -1,3 +1,24 @@
 .main-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 145px;
+    padding-left: 0;
+  }
 
+  &__list-item {
+    list-style: none;
+  }
+
+  &__list-link {
+    display: block;
+    padding: 13px 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
 }

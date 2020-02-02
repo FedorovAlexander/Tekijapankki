@@ -2,13 +2,16 @@ mixin main-nav(selected)
 
   -
     var menu = {
-      'Home': '/home',
-      'Blog': '/blog',
-      'Contact': '/contact'
+      'Tekijät': '/painters/',
+      'Tietoa palvelusta': '/about/'
     };
 
   nav.main-nav
     ul.main-nav__list
+      li.main-nav__list-item
+        a.main-nav__list-link(href='/', title='Home')
+          svg(width="18", height="18")
+            use(xlink:href="img/sprite-svg.svg#home")
       each val, key in menu
-        li
-          a(href=val, title=key)= key
+        li.main-nav__list-item
+          a.main-nav__list-link(href=val, title=key)= key
