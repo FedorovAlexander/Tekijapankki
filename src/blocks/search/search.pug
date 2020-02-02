@@ -1,0 +1,34 @@
+mixin search()
+
+  - var filters = ['Työnäytteet', 'Nimi', 'Palaute'];
+  - var tags = ['Terassit', 'Katot', 'Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset', 'Lattiat', 'Kivijulkisivut ja sokkelit', 'Ovet ikkunat ja kalusteet'];
+
+
+  section.search
+    .search__panel-wrapper
+      .search__panel.container
+        .search__input
+          form.search__form(method="POST")
+            label.search__input-label(for="input") Hae
+              input.search__input-field(type="text" id="input")
+            button.search__submit-button
+              svg(width="27", height="27")
+                use(xlink:href="img/sprite-svg.svg#loupe")
+        .search__filter
+          span.search__filter-title Lajitteluperuste
+          ul.search__filter-list
+            each val, index in filters
+              - var className = (index == 0) ? 'search__filter-item search__filter-item--active' : 'search__filter-item';
+              li(class=className)= val
+                a.search__filter-link(href="#")
+    
+    .search__tags-wrapper 
+      .search__tags.container
+        p.search__tags-title Valitse maalaustyö
+        ul.search__tags-list
+          each val in tags
+            li.search__tags-item
+              a.search__tags-link(href="#")= val
+    .search__description-wrapper
+      .search__description.conainer   
+        p.search__description-text Etsi projektiisi sopivia urakoitsijoita ja pyydä tarjous!
