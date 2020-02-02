@@ -1,13 +1,9 @@
-# Start kit
+# TEKIJÄPANKKI
 
-Стартовый репозиторий.
+Instalation: `npm i`.
 
-Установка: `npm i`.
+Start: `npm start`.
 
-Запуск: `npm start`.
+Stop: `Ctrl + C`
 
-Запуск конкретной задачи: `npm start имя_задачи` (список задач смотри в `gulpfile.js`)
-
-Остановка: <kbd>Ctrl + C</kbd>
-
-Добавление нового блока: `node createBlock.js имя-блока`. Будут созданы папка блока, `.scss` и `.pug` файлы, добавлены импорт стилей и импорт примеси блока.
+Add a new block: `node createBlock.js block-name`.
