@@ -1,2 +1,15 @@
-// Подключение своих шрифтов.
-// Не пишите тут ничего, кроме @font-face
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
