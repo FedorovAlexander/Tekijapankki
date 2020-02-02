@@ -1,0 +1,13 @@
+.button {
+  min-width: 140px;
+  border: 1px solid #867d67;
+  background: none;
+  padding: 3px 14px;
+  line-height: 28px;
+  color: #fff;
+
+  &--header {
+    opacity: 0.5;
+    border-color: #fff;
+  }
+}
