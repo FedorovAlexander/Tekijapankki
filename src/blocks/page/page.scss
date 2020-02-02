@@ -1,14 +1,3 @@
-// Глобальные стили (.page — на теге html)
-
-// Make viewport great again (responsive)
-// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
-@at-root {
-
-  @-ms-viewport { // stylelint-disable-line  at-rule-no-vendor-prefix
-    width: device-width;
-  }
-}
-
 .page { // html
 
   $block-name:                &; // #{$block-name}__element
@@ -79,9 +68,7 @@ textarea {
   touch-action: manipulation;
 }
 
-// We love EDGE! This is a browser!
 svg {
-
   a &,
   button & {
     pointer-events: none;
