@@ -29,7 +29,7 @@
   &__read-more-link {
     position: relative;
     text-decoration: none;
-    color: #ab8b3f;
+    color: $link-text-color;
 
     &:hover {
       text-decoration: underline;
@@ -70,7 +70,7 @@
   &__info-link {
     position: relative;
     text-decoration: none;
-    color: #ab8b3f;
+    color: $link-text-color;
 
     &:hover {
       text-decoration: underline;
@@ -95,7 +95,7 @@
 
   &__copyright-link {
     text-decoration: none;
-    color: #ab8b3f;
+    color: $link-text-color;
     font-size: 0.6875rem;
 
     &:hover {
