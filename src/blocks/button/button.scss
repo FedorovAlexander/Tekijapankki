@@ -1,14 +1,21 @@
 .button {
   min-width: 140px;
-  border: 1px solid #867d67;
+  border: 1px solid #548235;
   background: none;
   padding: 3px 14px;
-  line-height: 28px;
-  color: #fff;
   cursor: pointer;
+  line-height: 28px;
+  color: #548235;
+
+  &:hover {
+    background-color: #8bd000;
+    color: #fff;
+  }
 
   &--header {
     opacity: 0.5;
+    border: 1px solid #fff;
     border-color: #fff;
+    color: #fff;
   }
 }
