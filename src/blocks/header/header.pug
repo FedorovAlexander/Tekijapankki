@@ -7,8 +7,14 @@ mixin header()
             use(xlink:href="img/sprite-svg.svg#logo")
         .header__logo-text Tekijäpankki
     .header__nav
+      button.header__menu-icon
+        svg(width="30", height="32" style="fill:#ffffff")
+            use(xlink:href="img/sprite-svg.svg#menu-icon")
       .header__nav-wrapper.container 
         +main-nav
         .header__nav-button
           +button(header)
+
+      .header__nav-wrapper.header__nav-wrapper--mobile
+        +mobile-nav
 

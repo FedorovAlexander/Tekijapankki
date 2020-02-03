@@ -1,0 +1,13 @@
+mixin mobile-nav()
+  -
+    var mobileMenu = {
+      'Tekijät': '/painters/',
+      'Tietoa palvelusta': '/about/',
+      'Pyydä tarjous': '#'
+    };
+
+  nav.mobile-nav
+    ul.mobile-nav__list
+      each val, key in mobileMenu
+        li.mobile-nav__list-item
+          a.mobile-nav__list-link(href=val, title=key)= key
