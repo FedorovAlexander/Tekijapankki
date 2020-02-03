@@ -51,7 +51,7 @@ mixin contractors()
         each val, key in contractors
           li.contractors__item
             .contractors__logo
-              img.contractors__img(src='img/'+val[7]+'.jpg')
+              img.contractors__img(src='img/'+val[7]+'.jpg' alt=key title=key)
             .contractors__info
               h2.contractors__name
                 a.contractors__link(href=val[6])= key
