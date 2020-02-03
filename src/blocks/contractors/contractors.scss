@@ -1,3 +1,118 @@
 .contractors {
+  &__wrapper {
+    padding-top: 1.25rem;
+    padding-bottom: 1.125rem;
+  }
 
+  &__info {
+    svg {
+      position: relative;
+      top: 0.25rem;
+    }
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $link-text-color;
+    font-size: 1.375rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__city {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+
+    svg {
+      margin-right: 0.625rem;
+    }
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &__contacts-item {
+    margin-right: 2rem;
+    list-style: none;
+  }
+
+  &__list-link {
+    margin-left: 0.4375rem;
+    color: $link-text-color;
+
+    &--phone {
+      font-size: 0.875rem;
+    }
+
+    &--email {
+      font-size: 0.8125rem;
+    }
+  }
+
+  &__description {
+    margin-top: 0.3125rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  &__tags-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &__tag {
+    position: relative;
+    margin-left: 1.25rem;
+    list-style: none;
+    font-size: 0.8125rem;
+    font-weight: 700;
+
+    &:first-child {
+      margin-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -11px;
+      content: '•';
+    }
+  }
 }
