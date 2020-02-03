@@ -1,32 +1,84 @@
-mixin contractors()
+mixin contractors() 
+  -
+    var contractors = {
+      'Tmi Antti Puumanen': [
+        'HELSINKI',
+        '+358442546122',
+        'antti.puumanen@gmail.com',
+        'Vuodesta 2010 toiminimellä maalausalan pien urakoitsijana ja ali-urakoitsijana töitä tehnyt yhdenmiehen yritys. Koulutukseltani olen Maalari-artesaani.pt sekä Restaurointi-Kisälli.at. Erikois-osaamisena Marmorointi/kivijäljennökset.',
+        {'tags': ['Efektimaalaus']},
+        '11',
+        '/company/tmi-antti-puumanen/',
+        '1'
+        ],
+      'Väriset Oy': [
+        'VANTAA',
+        '0207344766',
+        'info@variset.fi',
+        'Väritämme talostasi! Väriset Oy on suomalainen ulkopintojen maalaukseen (https://www.variset.fi/talon-maalaus/) ja kattojen huoltoon (https://www.variset.fi/tiilikaton-pinnoitus/) sekä maalaukseen erikoistunut yritys. Väriset Oy:n historia lähtee jo vuodesta 2007, kun Peltokorven veljekset alkoivat tehdä toiminimellä ulkomaalauksia Oulun seudulla kesätyöksi. Tyytyväisten asiakkaiden myötä töitä alkoi olla jo niin paljon, että veljekset pystyivät palkkaamaan jopa ulkopuolisia työntekijöitä. 2013 toiminta siirrettiin Pääkaupunkiseudulle. Nykyään Väriset työllistää jo 100 maalausalan ammattilaista Uudellamaalla ja Pirkanmaalla. Tyytyväisiä asiakkaita on jo yli 1400 ja lisää tulee jatkuvasti. Pyydä meidät ilmaiselle arviokäynnille.',
+        {'tags': ['Terassit', 'Katot', 'Puujulkisivut', 'Kivijulkisivut ja sokkelit', 'Ovet ikkunat ja kalusteet']},
+        '11',
+        '/company/v%c3%a4riset-oy',
+        '2'
+        ],
+      'Maalauspalvelu Artisania': [
+        'VANTAA',
+        '050 356 2726',
+        'natunen.anne@gmail.com',
+        'Artisania on sisustusmaalaukseen, tapetointiin, erikois –ja efektimaalaukseen erikoistunut yritys.',
+        {'tags': ['Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset', 'Lattiat', 'Ovet ikkunat ja kalusteet']},
+        '11',
+        '/company/maalauspalvelu-artisania',
+        '3'
+        ],
+      'TelaKalle Oy': [
+        'TAMPERE',
+        '+358503634849',
+        'telakalle@telakalle.fi',
+        'Olemme sisäremonttien moniosaaja teemme kaiken lattiasta kattoon. Meidän kautta tilaaja saa tarvittaessa sähkömiehet ja putkarit monista yhteistyökumppaneistamme. Laskutus menee meidän kautta joten saat vain yhden laskun.',
+        {'tags': ['Lattiat', 'Kivijulkisivut ja sokkelit', 'Ovet ikkunat ja kalusteet', 'Terassit', 'Katot', 'Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset']},
+        '11',
+        '/company/telakalle-oy',
+        '4'
+        ]
+    };
+
+
   section.contractors
     .contractors__wrapper.container
       ul.contractors__list
-        li.contractors__item
-          .contractors__logo
-          .contractors__info
-            h2.contractors__name
-              a.contractors__link(href="") Tmi Antti Puumanen
-            p.contractors__city
-              svg(width="18", height="18")
-                  use(xlink:href="img/sprite-svg.svg#placeholder")
-              | Helsinki
-            ul.contractors__contacts-list
-              li.contractors__contacts-item
+        - var index = 0;
+        each val, key in contractors
+          li.contractors__item
+            .contractors__logo
+              img.contractors__img(src='img/'+val[7]+'.jpg')
+            .contractors__info
+              h2.contractors__name
+                a.contractors__link(href=val[6])= key
+              p.contractors__city
                 svg(width="18", height="18")
-                    use(xlink:href="img/sprite-svg.svg#phone")
-                a.contractors__list-link.contractors__list-link--phone(href="tel:") +358442546122
-              li.contractors__contacts-item
-                svg(width="18", height="18")
-                  use(xlink:href="img/sprite-svg.svg#email") 
-                a.contractors__list-link.contractors__list-link--email(href="mailto:") antti.puumanen@gmail.com
-            p.contractors__description 
-              | Vuodesta 2010 toiminimellä maalausalan pien urakoitsijana ja ali-urakoitsijana töitä tehnyt yhdenmiehen yritys. Koulutukseltani olen Maalari-artesaani.pt sekä Restaurointi-Kisälli.at. Erikois-osaamisena Marmorointi/kivijäljennökset.
-            ul.contractors__tags-list
-              li.contractors__tag Efektimaalaus
-              li.contractors__tag Terassit
-              li.contractors__tag Katot
-          .contractors__button
-            +button
-            .contractors__projects
-  
+                    use(xlink:href="img/sprite-svg.svg#placeholder")
+                =val[0]
+              ul.contractors__contacts-list
+                li.contractors__contacts-item
+                  svg(width="18", height="18")
+                      use(xlink:href="img/sprite-svg.svg#phone")
+                  a.contractors__list-link.contractors__list-link--phone(href="tel:")= val[1]
+                li.contractors__contacts-item
+                  svg(width="18", height="18")
+                    use(xlink:href="img/sprite-svg.svg#email") 
+                  a.contractors__list-link.contractors__list-link--email(href="mailto:")= val[2]
+              p.contractors__description= val[3]
+              ul.contractors__tags-list
+                each tags, key in val[4]
+                  each tag in tags
+                    li.contractors__tag= tag
+                
+            .contractors__button
+              +button
+              .contractors__projects
+                span.contractors__projects-icon
+                  svg(width="15", height="15")
+                    use(xlink:href="img/sprite-svg.svg#home-gray")
+                span.contractors__projects-number= val[5]
+    

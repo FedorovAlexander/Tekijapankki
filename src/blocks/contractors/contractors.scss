@@ -1,10 +1,11 @@
 .contractors {
   &__wrapper {
-    padding-top: 1.25rem;
     padding-bottom: 1.125rem;
   }
 
   &__info {
+    padding-right: 40px;
+
     svg {
       position: relative;
       top: 0.25rem;
@@ -21,12 +22,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1.125rem;
+    border-top: 1px solid #e2e2e1;
+    padding-top: 1.125rem;
     list-style: none;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  &__logo {
+    margin-right: 1.25rem;
+  }
+
+  &__img {
+    width: 8.6875rem;
+    max-width: 8.6875rem;
+    height: 8.6875rem;
   }
 
   &__name {
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 1;
+    font-weight: 600;
   }
 
   &__link {
@@ -66,7 +86,12 @@
 
   &__list-link {
     margin-left: 0.4375rem;
+    text-decoration: none;
     color: $link-text-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &--phone {
       font-size: 0.875rem;
@@ -79,7 +104,8 @@
 
   &__description {
     margin-top: 0.3125rem;
-    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
     font-size: 1rem;
     font-weight: 200;
   }
@@ -88,6 +114,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    word-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -95,13 +123,12 @@
 
   &__tag {
     position: relative;
-    margin-left: 1.25rem;
+    margin-right: 1.25rem;
     list-style: none;
     font-size: 0.8125rem;
     font-weight: 700;
 
-    &:first-child {
-      margin-left: 0;
+    &:last-child {
 
       &:before {
         display: none;
@@ -111,8 +138,28 @@
     &:before {
       position: absolute;
       top: 0;
-      left: -11px;
+      right: -11px;
       content: '•';
     }
+  }
+
+  &__button {
+    border-left: 1px dotted #ccc;
+    padding-top: 0.4375rem;
+    padding-left: 1.25rem;
+  }
+
+  &__projects {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  &__projects-number {
+    font-size: 0.75rem;
+    font-weight: 700;
   }
 }
