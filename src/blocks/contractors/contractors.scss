@@ -113,12 +113,12 @@
   &__tags-list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    word-wrap: wrap;
+    justify-content: flex-start;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    word-wrap: wrap;
   }
 
   &__tag {
@@ -161,5 +161,21 @@
   &__projects-number {
     font-size: 0.75rem;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contractors {
+    &__info {
+      max-width: 52%;
+    }
+
+    &__button {
+      width: 100%;
+
+      .button {
+        width: 100%;
+      }
+    }
   }
 }
