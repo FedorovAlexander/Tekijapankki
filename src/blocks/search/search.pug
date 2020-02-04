@@ -20,7 +20,7 @@ mixin search()
             each val, index in filters
               - var className = (index == 0) ? 'search__filter-item search__filter-item--active' : 'search__filter-item';
               li(class=className)= val
-                a.search__filter-link(href="#")
+                a.search__filter-link(href="#" title=val)
     
     .search__tags-wrapper 
       .search__tags.container
@@ -28,7 +28,7 @@ mixin search()
         ul.search__tags-list
           each val in tags
             li.search__tags-item
-              a.search__tags-link(href="#")= val
+              a.search__tags-link(href="#" title=val)= val
     .search__description-wrapper
       .search__description.conainer   
         p.search__description-text Etsi projektiisi sopivia urakoitsijoita ja pyydä tarjous!
