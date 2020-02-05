@@ -2,6 +2,9 @@
 
 mixin button(header)
   if header
-    button.button.button--header Pyydä tarjous
+    button.button.button--header 
+     span Pyydä tarjous
+      span.button__counter.-js-counter
   else
-    button.button Pyydä tarjous!
+    button.button.button--default
+      span Pyydä tarjous!
