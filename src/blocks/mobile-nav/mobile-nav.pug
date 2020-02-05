@@ -2,8 +2,7 @@ mixin mobile-nav()
   -
     var mobileMenu = {
       'Tekijät': '/painters/',
-      'Tietoa palvelusta': '/about/',
-      'Pyydä tarjous': '#'
+      'Tietoa palvelusta': '/about/'
     };
 
   nav.mobile-nav
@@ -11,3 +10,6 @@ mixin mobile-nav()
       each val, key in mobileMenu
         li.mobile-nav__list-item
           a.mobile-nav__list-link(href=val, title=key)= key
+      li.mobile-nav__list-item 
+        a.mobile-nav__list-link(href="#") Pyydä tarjous
+          span.mobile-nav__list-counter.-js-counter

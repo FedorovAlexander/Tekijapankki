@@ -19,11 +19,16 @@ $(document).ready(function() {
         $('.-js-count-button').find('.button').removeClass('active');
       }
       if ($(".-js-add .button.active").length) {
-        $('.-js-counter').text($(".-js-add .button.active").length)
+        if ($(window).width() < 700) {
+          $('.-js-counter').text('(' + $(".-js-add .button.active").length + ')');
+       }
+       else {
+        $('.-js-counter').text($(".-js-add .button.active").length);
+       }
+        
       } else {
         $('.-js-counter').text('');
       }
-
     })
   }
   addToList();
