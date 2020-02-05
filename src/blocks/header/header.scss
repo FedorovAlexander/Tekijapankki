@@ -8,9 +8,16 @@
   }
 
   &__logo-link {
+    display: block;
     position: absolute;
     top: 0;
     left: 15px;
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__logo-text {
@@ -74,11 +81,8 @@
       top: 5px;
       left: 0.3125rem;
       z-index: 100;
-
-      svg {
-        width: 54px;
-        height: 54px;
-      }
+      width: 54px;
+      height: 54px;
     }
 
     &__nav-wrapper {
