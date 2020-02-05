@@ -9,7 +9,8 @@ mixin contractors()
         {'tags': ['Efektimaalaus']},
         '11',
         '/company/tmi-antti-puumanen/',
-        '1'
+        '1',
+        'Efektimaalaus'
         ],
       'Väriset Oy': [
         'VANTAA',
@@ -19,7 +20,8 @@ mixin contractors()
         {'tags': ['Terassit', 'Katot', 'Puujulkisivut', 'Kivijulkisivut ja sokkelit', 'Ovet ikkunat ja kalusteet']},
         '11',
         '/company/v%c3%a4riset-oy',
-        '2'
+        '2',
+        'Terassit, Katot, Puujulkisivut, Kivijulkisivut ja sokkelit, Ovet ikkunat ja kalusteet'
         ],
       'Maalauspalvelu Artisania': [
         'VANTAA',
@@ -29,7 +31,8 @@ mixin contractors()
         {'tags': ['Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset', 'Lattiat', 'Ovet ikkunat ja kalusteet']},
         '11',
         '/company/maalauspalvelu-artisania',
-        '3'
+        '3',
+        'Puujulkisivut, Tasoitustyöt, Efektimaalaus, Sisämaalaukset, Lattiat, Ovet ikkunat ja kalusteet'
         ],
       'TelaKalle Oy': [
         'TAMPERE',
@@ -39,7 +42,8 @@ mixin contractors()
         {'tags': ['Lattiat', 'Kivijulkisivut ja sokkelit', 'Ovet ikkunat ja kalusteet', 'Terassit', 'Katot', 'Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset']},
         '11',
         '/company/telakalle-oy',
-        '4'
+        '4',
+        'Lattiat, Kivijulkisivut ja sokkelit, Ovet ikkunat ja kalusteet, Terassit, Katot, Puujulkisivut, Tasoitustyöt, Efektimaalaus, Sisämaalaukset'
         ]
     };
 
@@ -48,7 +52,7 @@ mixin contractors()
     .contractors__wrapper.container
       ul.contractors__list
         each val, key in contractors
-          li.contractors__item
+          li.contractors__item(data-item-tags=val[8])
             .contractors__logo
               img.contractors__img(src='img/'+val[7]+'.jpg' alt=key title=key)
             .contractors__info
