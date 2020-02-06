@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tekijät - Tikkurilan Tekijäpankki</title>
+  <meta name="description" content=" Lisää tekijäksi maalausprojektiisi soveltuvat urakoitsijat ja lähetä tarjouspyynnöt kerralla kolmelle tekijälle.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+</head>
+
+<body>
+  <div class="page__wrapper">
+    <header class="header">
+      <div class="header__logo">
+        <div class="header__logo-wrapper container"><a class="header__logo-link" href="/"></a>
+          <div class="header__logo-text">Tekijäpankki</div>
+        </div>
+      </div>
+      <div class="header__nav"><button class="header__menu-icon"><svg width="30" height="32" style="fill:#ffffff"><use xlink:href="img/sprite-svg.svg#menu-icon"></use></svg></button>
+        <div class="header__nav-wrapper container">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item"><a class="main-nav__list-link" href="/" title="Home"><svg width="18" height="18"><use xlink:href="img/sprite-svg.svg#home"></use></svg></a></li>
+              <li class="main-nav__list-item"><a class="main-nav__list-link" href="/painters/" title="Tekijät">Tekijät</a></li>
+              <li class="main-nav__list-item"><a class="main-nav__list-link" href="/about/" title="Tietoa palvelusta">Tietoa palvelusta</a></li>
+            </ul>
+          </nav>
+          <div class="header__nav-button -js-count-button"><button class="button button--header"> <span class="button__text">Pyydä tarjous<span class="button__counter -js-counter"></span></span></button></div>
+        </div>
+        <div class="header__nav-wrapper header__nav-wrapper--mobile">
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__list-item"><a class="mobile-nav__list-link" href="/painters/" title="Tekijät">Tekijät</a></li>
+              <li class="mobile-nav__list-item"><a class="mobile-nav__list-link" href="/about/" title="Tietoa palvelusta">Tietoa palvelusta</a></li>
+              <li class="mobile-nav__list-item"> <a class="mobile-nav__list-link" href="#">Pyydä tarjous<span class="mobile-nav__list-counter -js-counter"></span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search">
+        <div class="search__panel-wrapper">
+          <div class="search__panel container">
+            <div class="search__input">
+              <form class="search__form" method="POST"><label class="search__input-label" for="input">Hae<input class="search__input-field" type="text" id="input"/></label><button class="search__submit-button"><svg width="27" height="27"><use xlink:href="img/sprite-svg.svg#loupe"></use></svg></button></form>
+            </div>
+            <div class="search__filter"><span class="search__filter-title">Lajitteluperuste</span>
+              <ul class="search__filter-list">
+                <li class="search__filter-item search__filter-item--active">Työnäytteet<a class="search__filter-link" href="#" title="Työnäytteet"></a></li>
+                <li class="search__filter-item">Nimi<a class="search__filter-link" href="#" title="Nimi"></a></li>
+                <li class="search__filter-item">Palaute<a class="search__filter-link" href="#" title="Palaute"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="search__tags-wrapper">
+          <div class="search__tags container">
+            <p class="search__tags-title">Valitse maalaustyö</p>
+            <div class="search__tags-list">
+              <ul class="taglist"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="search__description-wrapper">
+          <div class="search__description conainer">
+            <p class="search__description-text">Etsi projektiisi sopivia urakoitsijoita ja pyydä tarjous!</p>
+          </div>
+        </div>
+      </section>
+      <section class="contractors">
+        <div class="contractors__wrapper container">
+          <ul class="contractors__list">
+            <li class="contractors__item" data-item-tags="Efektimaalaus">
+              <div class="contractors__logo"><img class="contractors__img" src="img/1.jpg" alt="Tmi Antti Puumanen" title="Tmi Antti Puumanen"/></div>
+                <div class="contractors__info">
+                  <h2 class="contractors__name"><a class="contractors__link" href="/company/tmi-antti-puumanen/">Tmi Antti Puumanen</a></h2>
+                  <p class="contractors__city"><svg width="18" height="18">
+                      <use xlink:href="img/sprite-svg.svg#placeholder"></use>
+                    </svg>HELSINKI</p>
+                  <ul class="contractors__contacts-list">
+                    <li class="contractors__contacts-item"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#phone"></use>
+                      </svg><a class="contractors__list-link contractors__list-link--phone" href="tel:">+358442546122</a></li>
+                    <li class="contractors__contacts-item contractors__contacts-item--email"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#email"> </use>
+                      </svg><a class="contractors__list-link contractors__list-link--email" href="mailto:">antti.puumanen@gmail.com</a></li>
+                  </ul>
+                  <p class="contractors__description">Vuodesta 2010 toiminimellä maalausalan pien urakoitsijana ja ali-urakoitsijana töitä tehnyt yhdenmiehen yritys. Koulutukseltani olen Maalari-artesaani.pt sekä Restaurointi-Kisälli.at. Erikois-osaamisena Marmorointi/kivijäljennökset.</p>
+                  <ul class="contractors__tags-list">
+                    <li class="contractors__tag">Efektimaalaus</li>
+                  </ul>
+                </div>
+                <div class="contractors__button -js-add"><button class="button button--default"><span class="button__text">Pyydä tarjous!</span></button>
+                  <div class="contractors__projects"><span class="contractors__projects-icon"><svg width="15" height="15"><use xlink:href="img/sprite-svg.svg#home-gray"></use></svg></span><span class="contractors__projects-number">11</span></div>
+                </div>
+            </li>
+            <li class="contractors__item" data-item-tags="Terassit, Katot, Puujulkisivut, Kivijulkisivut ja sokkelit, Ovet ikkunat ja kalusteet">
+              <div class="contractors__logo"><img class="contractors__img" src="img/2.jpg" alt="Väriset Oy" title="Väriset Oy"/></div>
+                <div class="contractors__info">
+                  <h2 class="contractors__name"><a class="contractors__link" href="/company/v%c3%a4riset-oy">Väriset Oy</a></h2>
+                  <p class="contractors__city"><svg width="18" height="18">
+                      <use xlink:href="img/sprite-svg.svg#placeholder"></use>
+                    </svg>VANTAA</p>
+                  <ul class="contractors__contacts-list">
+                    <li class="contractors__contacts-item"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#phone"></use>
+                      </svg><a class="contractors__list-link contractors__list-link--phone" href="tel:">0207344766</a></li>
+                    <li class="contractors__contacts-item contractors__contacts-item--email"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#email"> </use>
+                      </svg><a class="contractors__list-link contractors__list-link--email" href="mailto:">info@variset.fi</a></li>
+                  </ul>
+                  <p class="contractors__description">Väritämme talostasi! Väriset Oy on suomalainen ulkopintojen maalaukseen (https://www.variset.fi/talon-maalaus/) ja kattojen huoltoon (https://www.variset.fi/tiilikaton-pinnoitus/) sekä maalaukseen erikoistunut yritys. Väriset Oy:n historia lähtee jo vuodesta 2007, kun Peltokorven veljekset alkoivat tehdä toiminimellä ulkomaalauksia Oulun seudulla kesätyöksi. Tyytyväisten asiakkaiden myötä töitä alkoi olla jo niin paljon, että veljekset pystyivät palkkaamaan jopa ulkopuolisia työntekijöitä. 2013 toiminta siirrettiin Pääkaupunkiseudulle. Nykyään Väriset työllistää jo 100 maalausalan ammattilaista Uudellamaalla ja Pirkanmaalla. Tyytyväisiä asiakkaita on jo yli 1400 ja lisää tulee jatkuvasti. Pyydä meidät ilmaiselle arviokäynnille.</p>
+                  <ul class="contractors__tags-list">
+                    <li class="contractors__tag">Terassit</li>
+                    <li class="contractors__tag">Katot</li>
+                    <li class="contractors__tag">Puujulkisivut</li>
+                    <li class="contractors__tag">Kivijulkisivut ja sokkelit</li>
+                    <li class="contractors__tag">Ovet ikkunat ja kalusteet</li>
+                  </ul>
+                </div>
+                <div class="contractors__button -js-add"><button class="button button--default"><span class="button__text">Pyydä tarjous!</span></button>
+                  <div class="contractors__projects"><span class="contractors__projects-icon"><svg width="15" height="15"><use xlink:href="img/sprite-svg.svg#home-gray"></use></svg></span><span class="contractors__projects-number">11</span></div>
+                </div>
+            </li>
+            <li class="contractors__item" data-item-tags="Puujulkisivut, Tasoitustyöt, Efektimaalaus, Sisämaalaukset, Lattiat, Ovet ikkunat ja kalusteet">
+              <div class="contractors__logo"><img class="contractors__img" src="img/3.jpg" alt="Maalauspalvelu Artisania" title="Maalauspalvelu Artisania"/></div>
+                <div class="contractors__info">
+                  <h2 class="contractors__name"><a class="contractors__link" href="/company/maalauspalvelu-artisania">Maalauspalvelu Artisania</a></h2>
+                  <p class="contractors__city"><svg width="18" height="18">
+                      <use xlink:href="img/sprite-svg.svg#placeholder"></use>
+                    </svg>VANTAA</p>
+                  <ul class="contractors__contacts-list">
+                    <li class="contractors__contacts-item"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#phone"></use>
+                      </svg><a class="contractors__list-link contractors__list-link--phone" href="tel:">050 356 2726</a></li>
+                    <li class="contractors__contacts-item contractors__contacts-item--email"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#email"> </use>
+                      </svg><a class="contractors__list-link contractors__list-link--email" href="mailto:">natunen.anne@gmail.com</a></li>
+                  </ul>
+                  <p class="contractors__description">Artisania on sisustusmaalaukseen, tapetointiin, erikois –ja efektimaalaukseen erikoistunut yritys.</p>
+                  <ul class="contractors__tags-list">
+                    <li class="contractors__tag">Puujulkisivut</li>
+                    <li class="contractors__tag">Tasoitustyöt</li>
+                    <li class="contractors__tag">Efektimaalaus</li>
+                    <li class="contractors__tag">Sisämaalaukset</li>
+                    <li class="contractors__tag">Lattiat</li>
+                    <li class="contractors__tag">Ovet ikkunat ja kalusteet</li>
+                  </ul>
+                </div>
+                <div class="contractors__button -js-add"><button class="button button--default"><span class="button__text">Pyydä tarjous!</span></button>
+                  <div class="contractors__projects"><span class="contractors__projects-icon"><svg width="15" height="15"><use xlink:href="img/sprite-svg.svg#home-gray"></use></svg></span><span class="contractors__projects-number">11</span></div>
+                </div>
+            </li>
+            <li class="contractors__item" data-item-tags="Terassit, Katot, Puujulkisivut, Tasoitustyöt, Efektimaalaus, Sisämaalaukset">
+              <div class="contractors__logo"><img class="contractors__img" src="img/4.jpg" alt="TelaKalle Oy" title="TelaKalle Oy"/></div>
+                <div class="contractors__info">
+                  <h2 class="contractors__name"><a class="contractors__link" href="/company/telakalle-oy">TelaKalle Oy</a></h2>
+                  <p class="contractors__city"><svg width="18" height="18">
+                      <use xlink:href="img/sprite-svg.svg#placeholder"></use>
+                    </svg>TAMPERE</p>
+                  <ul class="contractors__contacts-list">
+                    <li class="contractors__contacts-item"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#phone"></use>
+                      </svg><a class="contractors__list-link contractors__list-link--phone" href="tel:">+358503634849</a></li>
+                    <li class="contractors__contacts-item contractors__contacts-item--email"><svg width="18" height="18">
+                        <use xlink:href="img/sprite-svg.svg#email"> </use>
+                      </svg><a class="contractors__list-link contractors__list-link--email" href="mailto:">telakalle@telakalle.fi</a></li>
+                  </ul>
+                  <p class="contractors__description">Olemme sisäremonttien moniosaaja teemme kaiken lattiasta kattoon. Meidän kautta tilaaja saa tarvittaessa sähkömiehet ja putkarit monista yhteistyökumppaneistamme. Laskutus menee meidän kautta joten saat vain yhden laskun.</p>
+                  <ul class="contractors__tags-list">
+                    <li class="contractors__tag">Terassit</li>
+                    <li class="contractors__tag">Katot</li>
+                    <li class="contractors__tag">Puujulkisivut</li>
+                    <li class="contractors__tag">Tasoitustyöt</li>
+                    <li class="contractors__tag">Efektimaalaus</li>
+                    <li class="contractors__tag">Sisämaalaukset</li>
+                  </ul>
+                </div>
+                <div class="contractors__button -js-add"><button class="button button--default"><span class="button__text">Pyydä tarjous!</span></button>
+                  <div class="contractors__projects"><span class="contractors__projects-icon"><svg width="15" height="15"><use xlink:href="img/sprite-svg.svg#home-gray"></use></svg></span><span class="contractors__projects-number">11</span></div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <article class="footer__article">
+          <h2 class="footer__title">Löydä lähin luotettava tekijä!</h2>
+          <p class="footer__text">Tekijäpankista löydät osaavat ja luotettavat tekijät maalaustyöllesi.</p><a class="footer__read-more-link" href="#">Lue lisää</a>
+        </article>
+        <div class="footer__list-wrapper">
+          <p class="footer__list-title">Yleistä</p>
+          <ul class="footer__info-list">
+            <li class="footer__info-item"><a class="footer__info-link" href="/about/">Tietoa palvelusta</a></li>
+            <li class="footer__info-item"><a class="footer__info-link" href="/about/contact/">Ota yhteyttä</a></li>
+          </ul>
+        </div>
+        <div class="footer__copyright">© 2019 Tikkurila Oyj - <a class="footer__copyright-link" href="https://www.tikkurila.fi/">www.tikkurila.fi</a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
