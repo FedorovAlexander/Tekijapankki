@@ -1,17 +1,24 @@
 svg4everybody(); // иницализация полифила для IE
 
 $(document).ready(function() {
+  tagsSort();
+  buttonToggle();
+  addToList();
 
-  $('.header__menu-icon').on('click', function() {
-    $('.header__nav-wrapper--mobile').toggleClass('active');
-  })
-
+  function buttonToggle() {
+    $('.header__menu-icon').on('click', function() {
+      $('.header__nav-wrapper--mobile').toggleClass('active');
+    })
+  }
+  
   function addToList() {
+    var contractors = $('.contractors__item');
+
     $('.-js-add .button').on('click', function(e) {
       e.preventDefault();
       $(this).toggleClass('active');
-      $(this).text(function(i, text) {
-        return text === "Pyydä tarjous!" ? "Lisätty listalle" : "Pyydä tarjous!";
+      $(this).find('.button__text').text(function(i, content) {
+        return content === "Pyydä tarjous!" ? "Lisätty listalle" : "Pyydä tarjous!";
       })
       $('.-js-count-button').find('.button').addClass('active');
 
