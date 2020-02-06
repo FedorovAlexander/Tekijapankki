@@ -39,14 +39,13 @@ mixin contractors()
         '+358503634849',
         'telakalle@telakalle.fi',
         'Olemme sisäremonttien moniosaaja teemme kaiken lattiasta kattoon. Meidän kautta tilaaja saa tarvittaessa sähkömiehet ja putkarit monista yhteistyökumppaneistamme. Laskutus menee meidän kautta joten saat vain yhden laskun.',
-        {'tags': ['Lattiat', 'Kivijulkisivut ja sokkelit', 'Ovet ikkunat ja kalusteet', 'Terassit', 'Katot', 'Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset']},
+        {'tags': ['Terassit', 'Katot', 'Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset']},
         '11',
         '/company/telakalle-oy',
         '4',
-        'Lattiat, Kivijulkisivut ja sokkelit, Ovet ikkunat ja kalusteet, Terassit, Katot, Puujulkisivut, Tasoitustyöt, Efektimaalaus, Sisämaalaukset'
+        'Terassit, Katot, Puujulkisivut, Tasoitustyöt, Efektimaalaus, Sisämaalaukset'
         ]
     };
-
 
   section.contractors
     .contractors__wrapper.container
@@ -75,8 +74,7 @@ mixin contractors()
               ul.contractors__tags-list
                 each tags, key in val[4]
                   each tag in tags
-                    li.contractors__tag= tag
-                
+                    li.contractors__tag= tag                
             .contractors__button.-js-add
               +button
               .contractors__projects

@@ -31,70 +31,18 @@ $(document).ready(function() {
       }
     })
   }
-  addToList();
 
-  // function filterList() {
-  //   var tagsArray = new Array();
-  //   var contractorsList = $('.contractors__list');
-  //   var items = $('.contractors__item');
-  //   var tag = $('.search__tags-list .search__tags-item');
-
-
-
-  //   tag.on('click', function(e) {
-  //     e.preventDefault();
-  //     $(this).toggleClass('active');
-  //     selectTagsArray = new Array();
-
-  //     tag.each(function() {
-  //       if($(this).hasClass('active')) {
-  //         selectTagsArray.push($(this).find('.search__tags-link').text());
-  //       }
-  //     })
-  //     console.log(selectTagsArray);
-
-  //     items.each(function() {
-  //       var foo = $(this).find('.contractors__tag');
-  //       var itemTagsArray = new Array();
-  //       foo.each(function() {
-  //         itemTagsArray.push($(this).text())
-  //         return itemTagsArray;
-  //       })
-
-
-  //       console.log('-------------------');
-  //       // console.log(itemTagsArray);
-
-
-  //       for (var i = 0; i < selectTagsArray.length; i++) {
-  //         if($.inArray( selectTagsArray[i],itemTagsArray)) {
-  //           $(this).hide();
-  //         } else {
-  //           $(this).show();
-  //         }
-  //       }
-      
-  //       // console.log(itemTagsArray)
-  //     })
-  //   })
-  //   // console.log('=======================')
-  // }
-
-  // filterList();
-
-
-  $('.tagsort-tags-container').tagSort({
-    items: '.contractors__item',
-    tagElement: 'li',
-    tagClassPrefix: false,
-    itemTagsView: false,
-    itemTagsSeperator: ' ',
-    itemTagsElement: false,
-    sortType: 'exclusive',
-    tagAttr: 'data-item-tags',
-    fadeTime: 0
-  });
-
-
-
+  function tagsSort() {
+    $('.taglist').tagSort({
+      items: '.contractors__item',
+      tagElement: 'li',
+      tagClassPrefix: false,
+      itemTagsView: false,
+      itemTagsSeperator: ' ',
+      itemTagsElement: false,
+      sortType: 'exclusive',
+      tagAttr: 'data-item-tags',
+      fadeTime: 200
+    });
+  }
 });

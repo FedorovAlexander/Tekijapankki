@@ -1,8 +1,6 @@
 mixin search()
 
   - var filters = ['Työnäytteet', 'Nimi', 'Palaute'];
-  - var tags = ['Terassit', 'Katot', 'Puujulkisivut', 'Tasoitustyöt', 'Efektimaalaus', 'Sisämaalaukset', 'Lattiat', 'Kivijulkisivut ja sokkelit', 'Ovet ikkunat ja kalusteet'];
-
 
   section.search
     .search__panel-wrapper
@@ -25,11 +23,8 @@ mixin search()
     .search__tags-wrapper 
       .search__tags.container
         p.search__tags-title Valitse maalaustyö
-        .tagsort-tags-container
-        ul.search__tags-list
-          each val in tags
-            li.search__tags-item
-              a.search__tags-link(href="#" title=val)= val
+        .search__tags-list
+          +taglist
     .search__description-wrapper
       .search__description.conainer   
         p.search__description-text Etsi projektiisi sopivia urakoitsijoita ja pyydä tarjous!
