@@ -1,10 +1,10 @@
 .button {
   opacity: 1;
   min-width: 140px;
-  border: 1px solid #264653;
+  border: 2px solid #264653;
   border-radius: 2px;
   background: none;
-  padding: 3px 14px;
+  padding: 0.1875rem 0.875rem;
   cursor: pointer;
   transition: all 0.2s ease-out;
   line-height: 28px;
@@ -12,6 +12,7 @@
 
   &--default {
     &:hover {
+      border-color: #20636b;
       background-color: #20636b;
       color: #fff;
     }
@@ -22,37 +23,45 @@
     }
 
     &.active {
+      position: relative;
       border-color: #3caea3;
       background-color: #3caea3;
-      color: #fff;
-      position: relative;
       text-align: center;
+      color: #fff;
+
       .button__text {
         display: inline-block;
         position: relative;
         right: -0.625rem;
+
         &:before {
+          display: block;
+          position: absolute;
+          top: 0.375rem;
+          left: -1.25rem;
           margin-right: 0.3125rem;
-          content: '';
           width: 0.9375rem;
           height: 0.9375rem;
-          position: absolute;
-          left: -1.25rem;
-          top: 0.375rem;
-          display: block;
           background-image: url('../img/checkmark.svg');
           background-size: cover;
+          content: '';
         }
       }
-      
+
     }
   }
 
   &--header {
     opacity: 0.5;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-color: #fff;
+    padding: 0.1875rem 0.4375rem;
+    transition: opacity 0.2s linear;
     color: #fff;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &.active {
@@ -60,7 +69,7 @@
     border-color: #3caea3;
     background-color: #3caea3;
     color: #fff;
-    
+
     .button__counter {
       display: inline-flex;
       align-items: center;
