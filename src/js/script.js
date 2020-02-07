@@ -10,9 +10,8 @@ $(document).ready(function() {
       $('.header__nav-wrapper--mobile').toggleClass('active');
     })
   }
-  
+
   function addToList() {
-    var contractors = $('.contractors__item');
 
     $('.-js-add .button').on('click', function(e) {
       e.preventDefault();
@@ -28,11 +27,10 @@ $(document).ready(function() {
       if ($(".-js-add .button.active").length) {
         if ($(window).width() < 700) {
           $('.-js-counter').text('(' + $(".-js-add .button.active").length + ')');
-       }
-       else {
-        $('.-js-counter').text($(".-js-add .button.active").length);
-       }
-        
+        } else {
+          $('.-js-counter').text($(".-js-add .button.active").length);
+        }
+
       } else {
         $('.-js-counter').text('');
       }
